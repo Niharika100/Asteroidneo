@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<!-- I have used Bootstrap for the designing -->
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="index.js"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Awishcar</title>
+</head>
+
+<body class="bg-light">
+  <h1 class="alert alert-success" style="text-align: center;">Neo Aestroid Stats</h1>
+  <!-- Form for the start and end Date -->
+  <div class="d-flex flex-row">
+    <div class="card bg-secondary mb-6 mx-md-5" style="max-width: 18rem;">
+      <div class="card-header">Enter the Start date and the End Date(7 days within Satrt Date)</div>
+      <div class="card-body w-50">
+        <form id="form1">
+          <label for="birthday" class="mr-4 badge badge-primary">Start Date:</label>
+          <input type="date" id="Sdate" name="Sdate"><br /><br>
+          <label for="birthday" class="mr-4 badge badge-primary">End Date:&nbsp;</label>
+          <input type="date" id="Edate" name="Edate"><br /><br>
+          <button class="btn btn-warning" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Canvas for the chart representation -->
+    <div class="w-50 mx-md-5">
+      <canvas id="chart" width="200" height="100"></canvas>
+      <!-- Fastest and Nearest Object Data -->
+      <div>
+        <h6>Fastest Asteroid : <span id = "fastest"></span></h6>
+        <h6>Nearest Asteroid : <span id="nearest"></span></h6>
+        <h6>Average size of the Asteroids : <span id="average"></span></h6>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- API Key for NASA => p3YU2TsqQenazSQjiPCuY8vHyrbmBjQfzJY7wYZu -->
